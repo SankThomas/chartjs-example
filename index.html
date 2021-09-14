@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        min-height: 100vh;
+      }
+
+      #myChart {
+        max-width: 300px;
+        max-height: 300px;
+      }
+
+      @media (min-width: 500px) {
+        #myChart {
+          max-width: 500px;
+          max-height: 300px;
+        }
+      }
+
+      @media (min-width: 768px) {
+        #myChart {
+          max-width: 700px;
+          max-height: 400px;
+        }
+      }
+    </style>
+    <title>ChartJs Example</title>
+  </head>
+  <body>
+    <div class="main">
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
